@@ -1,5 +1,5 @@
 import { useEffect, useRef } from 'react';
-import { Award, BalloonHeart, ClockHistory, CodeSlash, Globe2, Grid3x3GapFill, HeadsetVr, JournalBookmark, Joystick, PeopleFill, Stars, Toggles } from 'react-bootstrap-icons';
+import { BalloonHeart, ClockHistory, CodeSlash, Globe2, Grid3x3GapFill, HeadsetVr, Joystick, Stars, Toggles } from 'react-bootstrap-icons';
 
 import ContentContainer from '~/components/contentContainer';
 import Tabs from '~/components/tabs';
@@ -25,10 +25,6 @@ export default function Index() {
     {
       name: 'bantu orang lain report penipuan olshop',
       url: 'https://rootverse.reinhart1010.id/security-intelligence/modigirlss-scam'
-    },
-    {
-      name: 'berhati (#_ )',
-      url: 'https://twitter.com/alterine0101/status/1521092070001475586?s=20&t=wGynevOxEqRDoXocm7AL2A'
     },
     {
       name: 'bisa bikin alt account',
@@ -95,8 +91,8 @@ export default function Index() {
       url: 'https://gitee.com/reinhart1010'
     },
     {
-      name: 'punya akun Twitter',
-      url: 'https://twitter.com/reinhart1010'
+      name: 'hijrah dari Twitter untuk bikin server medsos sendiri',
+      url: 'https://bots.reinhart1010.id/@reinhart'
     },
     {
       name: 'punya blog pribadi',
@@ -201,11 +197,9 @@ export default function Index() {
   });
 
   return (
-    <MainLayout header={{
-      'isFloating': true,
-    }} hero={{
+    <MainLayout hero={{
       'children': (
-        <h1 className="font-serif leading-none sm:leading-tight text-center text-4xl sm:text-5xl md:text-6xl lg:text-8xl md:tracking-tight w-full">
+        <h1 className="font-serif leading-none sm:leading-tight text-center text-4xl sm:text-5xl lg:text-6xl md:tracking-tight w-full">
           <span ref={anakITTitleRef} />
           <a className="underline" ref={anakITAbilityRef} target="_blank" />
           <span ref={anakITQuestionMarkRef}>?</span>
@@ -230,7 +224,7 @@ export default function Index() {
         ]}/> */}
         <div className="flex flex-col md:flex-row">
           <div className="p-8 md:w-2/3 xl:w-5/6">
-            <h2 className="font-serif text-3xl lg:text-4xl xl:text-5xl">Halo, saya <span className="font-bold">Reinhart</span>, <span className="font-bold">seorang manusia</span> yang hidup di <span className="font-bold">Jakarta</span> dan suka bereksperimen dan membangun hal-hal baru.</h2>
+            <h2 className="font-serif text-3xl lg:text-4xl">Halo, saya <span className="font-bold">Reinhart</span>, <span className="font-bold">seorang manusia</span> yang hidup di <span className="font-bold">Jakarta</span> dan suka bereksperimen dan membangun hal-hal baru.</h2>
             <p className="mt-4"><b>Transformasi digital</b> yang semakin digencarkan di tengah-tengah masyarakat telah menuntut saya untuk bertransformasi menjadi pribadi yang digital.</p>
             <p className="mt-4">Saya kini berevolusi menjadi <b>amalgam digital</b> yang sering menjelajahi berbagai dunia, nyata dan maya. Dengan logam biru yang melekat di dalam tubuh saya, <a className="underline" href="https://reinhart1010.id/blog/2022/02/25/im-nate-the-blue-command-line-guy/" target="_blank">saya telah menjadi ikon dalam dunia per-<i>command-line</i>-an</a>.</p>
             <h3 className="font-serif mt-6 text-2xl lg:text-3xl xl:text-4xl">Pengaturan Semesta</h3>
@@ -276,21 +270,21 @@ export default function Index() {
             child: (<p><Grid3x3GapFill aria-hidden={true} className="inline mr-2" />Proyek &amp; Aplikasi</p>)
           },
           {
-            id: 'blogs',
-            child: (<p><Award aria-hidden={true} className="inline mr-2" />Penghargaan</p>)
-          },
-          {
-            id: 'projects',
+            id: 'experiences',
             child: (<p><ClockHistory aria-hidden={true} className="inline mr-2" />Pengalaman</p>)
           },
           {
-            id: 'blogs',
-            child: (<p><CodeSlash aria-hidden={true} className="inline mr-2" />Hard Skills</p>)
+            id: 'vs-kima',
+            child: (<p><Stars aria-hidden={true} className="inline mr-2" />vs PT. Kawasan Industri Makassar (Persero)</p>)
           },
           {
-            id: 'blogs',
-            child: (<p><Stars aria-hidden={true} className="inline mr-2" />Soft Skills</p>)
-          }
+            id: 'vs-bsg',
+            child: (<p><Stars aria-hidden={true} className="inline mr-2" />vs PT. Bank Pembangunan Daerah Sulawesi Utara Gorontalo</p>)
+          },
+          {
+            id: 'vs-tep',
+            child: (<p><Stars aria-hidden={true} className="inline mr-2" />vs PT. Taraindo Energi Perkasa</p>)
+          },
         ]}/>
       </ContentContainer>
     </MainLayout>

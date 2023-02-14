@@ -1,18 +1,15 @@
-import Header, { HeaderProps } from "~/components/header";
+import Header from "~/components/header";
 import Hero, { HeroProps } from "~/components/hero";
 
 class MainLayoutProps {
   children?: React.ReactNode;
-  header: HeaderProps = {
-    isFloating: false
-  };
-  hero: HeroProps = {};
+  hero?: HeroProps = {};
 }
 
 const MainLayout = (props: MainLayoutProps) => {
   return (
     <>
-      <Header {...props.header} />
+      <Header />
       <Hero {...props.hero} />
       {props.children}
     </>
